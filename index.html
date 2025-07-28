@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <title>Simulador de Dados</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Simulador de Dados</h2>
+      <button id="d4" onclick="rollD4()">Rolar d4</button>
+      <button id="d6" onclick="rollD6()">Rolar d6</button>
+      <button id="d6" onclick="rollD8()">Rolar d8</button>
+      <button id="d10" onclick="rollD10()">Rolar d10</button>
+      <button id="d6" onclick="rollD12()">Rolar d12</button>
+      <button id="d20" onclick="rollD20()">Rolar d20</button>
+      <model-viewer src="dice1/scene.gltf" alt="dice" camera-controls id="diceModel"></model-viewer>
+      <div class="resultado" id="resultado"></div>
+      <div class="historico" id="historico">Histórico: nenhum ainda</div>
+      <div>
+        <button class="zerar" onclick="clsHist()">Limpar Historico</button>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"
+    ></script>
+  </body>
+</html>

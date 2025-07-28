@@ -1,0 +1,87 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #eef2f3;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 50px;
+    }
+
+    .container {
+      background: white;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin: 5px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #007bff;
+      color: white;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .zerar {
+      padding: 10px 15px;
+      margin-top: 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #c5c5c5;
+      color: rgb(43, 43, 43);
+      transition: background 0.3s ease;
+    }
+
+    .zerar:hover {
+      background: #868686;
+    }
+
+    .rolling {
+        animation: rotate 1.5s infinite linear;
+    }
+    model-viewer {
+      height: 100px;
+      width: 300px;
+    }
+
+    @keyframes rotate {
+      from {
+    transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    }
+
+
+    .resultado {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      font-size: 40px;
+      color: #28a745;
+    }
+
+    .historico {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
